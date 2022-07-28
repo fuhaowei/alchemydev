@@ -108,6 +108,25 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "_owners",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "to",
 						"type": "address"
 					},
@@ -659,11 +678,11 @@
 			]
 		},
 		"contract-8111fa1e16.sol": {
-			"keccak256": "0x11acac15d7b24bd74d5ccb0d1ac19337a5a71cf9be24da57fa37f6e5830ee8a1",
+			"keccak256": "0x267ccc3daac6ca9aea66742bfbddec52845b7c0376b540acf1e29ac35c35b9a9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fa844ba3f46b88a234edc0606ff42b0b68955d266bac33521dd37d039426eacc",
-				"dweb:/ipfs/QmUQBskEm1LpX9BWJhu3VKk1LTjgWunAdhiL9xpXy4e52p"
+				"bzz-raw://b95bcf3314a0dfaf0561a67f06e68f0a63e9e940158c9d8bf753be1824de6a10",
+				"dweb:/ipfs/QmR3oiSyUHYKxrXkv2tXTRs7ZgeJeSrxQLf7asPvQiL7Pd"
 			]
 		}
 	},

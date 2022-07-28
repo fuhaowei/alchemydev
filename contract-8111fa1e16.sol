@@ -13,15 +13,20 @@ contract Haofirst is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
 
     Counters.Counter private _tokenIdCounter;
 
-    constructor() ERC721("haofirst", "FHW") {}
+    mapping(address => uint256) public _owners;
 
+    constructor() ERC721("haofirst", "FHW") {}
+  
     function safeMint(address to, string memory uri) public {
         require (_tokenIdCounter.current() <= MAX_SUPPLY, "I'm sorry max mint reached.");
+        require(_owners[to] < 6, "5 nfts max per address! sorry");
         uint256 tokenId = _tokenIdCounter.current();
+        _owners[to] += 1;
         _tokenIdCounter.increment();
         _safeMint(to, tokenId);
         _setTokenURI(tokenId, uri);
     }
+
 
     // The following functions are overrides required by Solidity.
 
